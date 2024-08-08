@@ -12,4 +12,3 @@ function carMaker(carName){
     }
 }
 console.log(carMaker('citroen')); 
-console.log('citroen'); 
