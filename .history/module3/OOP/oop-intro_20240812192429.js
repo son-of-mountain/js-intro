@@ -19,5 +19,5 @@ class User{
 // console.log(user)
 
 // const mouaad = new User('Mouaad',28,'Houara');
-var user = new User()
-console.log(user)
+var 
+console.log(mouaad)

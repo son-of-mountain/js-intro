@@ -2,12 +2,12 @@ class User{
     constructor(name,age,city){
         this.name = name || "Fatiha";
         this.age = age || 24;
-        this.city = city || "fes";
+        this.city = city;
     }
     changeName(newname) {
         this.name= newname;
         console.log("wow my name is now :", this.name);    
-    }
+    },
     changeIdentity(newCity){
         this.city= newCity;
         console.log("wow my current city is now :", this.city);     
@@ -18,6 +18,5 @@ class User{
 // user.changeIdentity('Fes');
 // console.log(user)
 
-// const mouaad = new User('Mouaad',28,'Houara');
-var user = new User()
-console.log(user)
+const mouaad = new User('Mouaad',28,'Houara');
+console.log(mouaad)
