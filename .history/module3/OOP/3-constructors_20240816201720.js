@@ -10,4 +10,4 @@ function Car(couleur){
 var tambil = new Car('3azzi')
 // tambil.accelerer()  
 // tambil;
-console.log("abcd".match(/d/)); 
+console.log("abcd".match(/d/); 

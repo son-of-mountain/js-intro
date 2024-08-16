@@ -9,5 +9,4 @@ function Car(couleur){
 // so lets define our own car
 var tambil = new Car('3azzi')
 // tambil.accelerer()  
-// tambil;
-console.log("abcd".match(/d/)); 
+tambil;
