@@ -2,7 +2,7 @@
 
 // FIRST: create the Animal class
 class Animal{
-    constructor(color = 'yellow', energy = 100){
+    constructor(color,energy){
         this.color = color;
         this.energy = energy;
     }
@@ -26,7 +26,7 @@ class Animal{
 
 // SECOND: create the Cat class that extends Animal
 class Cat extends Animal{
-    constructor(sound = 'purr', canJumpHigh = true, canClimbTrees = true, color, energy){
+    constructor(color,energy,sound='purr',canJumpHigh,canClimTrees){
         super(color, energy);
         this.sound = sound;
         this.canJumpHigh = canJumpHigh;
@@ -39,7 +39,7 @@ class Cat extends Animal{
 
 // THIRD: create the Bird class that extends Animal
 class Bird extends Animal{
-    constructor(sound = 'chirp', canFly = true, color, energy){
+    constructor(color, energy, sound = 'chirp', canFly){
         super(color, energy);
         this.sound = sound;
         this.canFly = canFly;
@@ -77,7 +77,7 @@ class Tiger extends Cat{
 
 // The Parrot class that extends Bird
 class Parrot extends Bird{
-    constructor(canTalk = false, sound,canFly, color,energy){
+    constructor(color, energy, sound, canFly,canTalk){
         super(color, energy);
         this.sound = sound;
         this.canFly = canFly;

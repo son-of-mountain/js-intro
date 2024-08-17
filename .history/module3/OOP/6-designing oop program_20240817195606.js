@@ -2,21 +2,17 @@
 
 // FIRST: create the Animal class
 class Animal{
-    constructor(color = 'yellow', energy = 100){
+    constructor(color,energy){
         this.color = color;
         this.energy = energy;
     }
     isActive(){
-        if(this.energy > 0){
-            this.energy -= 20 ;
-            console.log('Energy is decreasing , its currently at : '+this.energy)
-        }
-        else if(this.energy == 0)
-            this.sleep();
+        this.energy = !energy;
+        console.log("This is the current energy ",this.energy);
     }
-    sleep() {
-        this.energy += 20;
-        console.log('Energy is increasing, currently at:', this.energy)
+    sleep(){
+        if(!this.energy)
+            console.log("The animal is sleeping");
     }
     getColor(){
         console.log("This is the current color",this.color);
@@ -26,7 +22,7 @@ class Animal{
 
 // SECOND: create the Cat class that extends Animal
 class Cat extends Animal{
-    constructor(sound = 'purr', canJumpHigh = true, canClimbTrees = true, color, energy){
+    constructor(color,energy,sound,canJumpHigh,canClimTrees){
         super(color, energy);
         this.sound = sound;
         this.canJumpHigh = canJumpHigh;
@@ -39,7 +35,7 @@ class Cat extends Animal{
 
 // THIRD: create the Bird class that extends Animal
 class Bird extends Animal{
-    constructor(sound = 'chirp', canFly = true, color, energy){
+    constructor(color, energy, sound, canFly){
         super(color, energy);
         this.sound = sound;
         this.canFly = canFly;
@@ -51,49 +47,39 @@ class Bird extends Animal{
 
 // The houseCat class
 class HouseCat extends Cat{
-    constructor(color, energy, sound, canJumpHigh, canClimTrees, houseCatSound="meow" ){
+    constructor(color, energy, sound, canJumpHigh, canClimTrees, houseCatSound ){
         super(color, energy, sound, canJumpHigh, canClimTrees);
         this.houseCatSound  = houseCatSound;
     }
     makeSound(option=true){
-        if(option)
-            super.makeSound();
+        super.makeSound();
         console.log(this.houseCatSound,option);
     }
 }
 
 // the Tiger class that extends Cat
 class Tiger extends Cat{
-    constructor(color, energy, sound, canJumpHigh, canClimTrees, tigerSound = "Roar!"){
+    constructor(color, energy, sound, canJumpHigh, canClimTrees, tigerSound){
         super(color, energy, sound, canJumpHigh, canClimTrees);
         this.tigerSound  = tigerSound;
     }
     makeSound(option=true){
-        if(option)
-            super.makeSound();
-        console.log(this.houseCatSound);    
+        super.makeSound();
+        console.log(this.houseCatSound,option);
     }
 }
 
 // The Parrot class that extends Bird
 class Parrot extends Bird{
-    constructor(canTalk = false, sound,canFly, color,energy){
+    constructor(color, energy, sound, canFly,canTalk){
         super(color, energy);
         this.sound = sound;
         this.canFly = canFly;
         this.canTalk = canTalk;
     }
     makeSound(option){
-        if(option)
-            super.makeSound();
-        if(this.canTalk)
-            console.log("The parrot is talking");
         
+        console.log(this.sound);
     }
 }
 
-var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
-var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
-
-polly.makeSound(); // 'chirp', 'I'm a talking parrot!'
-fiji.makeSound(); // 'chirp'
