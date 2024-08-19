@@ -1,6 +1,6 @@
 //TODO: finish the use of FOR EACH LOOP in the https://www.coursera.org/learn/programming-with-javascript/supplement/WbvM4/for-of-loops-and-objects
 
-// this functions are important for objects 
+// this 
 
 const car = {
     speed :100 ,
