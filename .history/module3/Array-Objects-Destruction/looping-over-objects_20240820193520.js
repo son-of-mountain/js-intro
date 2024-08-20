@@ -17,6 +17,6 @@ console.log(Object.values(car));
 console.log("lists [properties,values] of the car")
 console.log(Object.entries(car));
 
-for(const key of Object.keys(car) ){
-    console.log(key , ":" , car[key]);  // this will throw an error because for of loop is for iterable objects
+for(const key of ){
+    console.log(car);  // this will throw an error because for of loop is for iterable objects
 }
