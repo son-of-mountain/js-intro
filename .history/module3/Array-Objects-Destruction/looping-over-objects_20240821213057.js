@@ -19,6 +19,6 @@ console.log(Object.entries(car));
 
 for(const key of Object.values(car) ){
     if(car["speed"] == key )
-        console.log("Good word you stepped on the correct value:",key);
+        console.log("Good word you stepped on the correct value: "key);
 
 }
