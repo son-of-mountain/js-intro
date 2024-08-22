@@ -3,16 +3,7 @@
 // this functions are important for objects 
 
 /*
-    there is a considerable difference between FOR OF and FOR IN 
-
-    - FOR IN loops through the properties and prototypes .
-
-
-    - For OF loops through the properties only using Object.keys()
-
-
-    Remember : FOR IN is more genereal than FOR OF
-
+    
 */
 
 

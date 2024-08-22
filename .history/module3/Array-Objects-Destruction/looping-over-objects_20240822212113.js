@@ -2,20 +2,6 @@
 
 // this functions are important for objects 
 
-/*
-    there is a considerable difference between FOR OF and FOR IN 
-
-    - FOR IN loops through the properties and prototypes .
-
-
-    - For OF loops through the properties only using Object.keys()
-
-
-    Remember : FOR IN is more genereal than FOR OF
-
-*/
-
-
 const car = {
     speed :100 ,
     color : "blue"
@@ -31,7 +17,7 @@ console.log(Object.values(car));
 console.log("lists [properties,values] of the car")
 console.log(Object.entries(car));
 
-for(const key of Object.values(car) ){
+for(const key  Object.values(car) ){
     if(car["speed"] == key )
         console.log("Good word you stepped on the correct value:",key);
 

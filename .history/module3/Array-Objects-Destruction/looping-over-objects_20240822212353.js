@@ -5,13 +5,9 @@
 /*
     there is a considerable difference between FOR OF and FOR IN 
 
-    - FOR IN loops through the properties and prototypes .
+    - FOR IN loops through the properties of an object .
+    - For OF loops through the values of an iterable object (like an array or string).
 
-
-    - For OF loops through the properties only using Object.keys()
-
-
-    Remember : FOR IN is more genereal than FOR OF
 
 */
 

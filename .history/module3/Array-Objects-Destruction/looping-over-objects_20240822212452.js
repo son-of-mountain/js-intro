@@ -11,7 +11,7 @@
     - For OF loops through the properties only using Object.keys()
 
 
-    Remember : FOR IN is more genereal than FOR OF
+    Remember : FOR IN is more genereal than F
 
 */
 
