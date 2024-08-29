@@ -8,7 +8,6 @@ const drone = {
 for(var key in drone){
     droneSpecs.set(key, drone[key])
 }
-console.log(droneSpecs)
 // ------------------------------- SET --------------------------
 const repetitiveNames =[ 'ayman' , 'mouaad' , 'salah' , 'ayman' , 'mouaad']
 const norepetitiveNames = new Set(repetitiveNames);

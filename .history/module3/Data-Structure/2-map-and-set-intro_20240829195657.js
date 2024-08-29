@@ -6,9 +6,8 @@ const drone = {
     color: 'yellow'
 }
 for(var key in drone){
-    droneSpecs.set(key, drone[key])
+    droneS
 }
-console.log(droneSpecs)
 // ------------------------------- SET --------------------------
 const repetitiveNames =[ 'ayman' , 'mouaad' , 'salah' , 'ayman' , 'mouaad']
 const norepetitiveNames = new Set(repetitiveNames);
