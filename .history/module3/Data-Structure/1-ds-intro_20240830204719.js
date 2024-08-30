@@ -24,8 +24,11 @@ const numss = [0,10,20,30,40,50];
 let results = numss.map(function(num){
     return num+3 ;
 });
-var resultss = function addThree(...numss){
-    return numss.map(index => index+3);
+let resultss = function addThree(...numss){
+    return numss.map(index => inx+3);
+}
+var result = function addTag(...restOfTheTrip){
+    return restOfTheTrip.map(hehe => hehe+"X");
 }
 
 console.log(results);

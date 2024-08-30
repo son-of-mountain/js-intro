@@ -14,4 +14,4 @@ tripEu(top3[0], top3[1], top3[2]);
 // so instead of typing all the elements of the array
 // just type three dots ... and youre fine
 console.log("now lets try another syntax")
-tripEu(...top3);    
+// tripEu(...top3);    

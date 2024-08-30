@@ -24,7 +24,7 @@ const numss = [0,10,20,30,40,50];
 let results = numss.map(function(num){
     return num+3 ;
 });
-var resultss = function addThree(...numss){
+let resultss = function addThree(...numss){
     return numss.map(index => index+3);
 }
 
