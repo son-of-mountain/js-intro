@@ -30,6 +30,6 @@ function handleClicks(){
 
 h1.addEventListener('click', handleClicks);
 h1.addEventListener('copy', function(){
-    prompt('good work');
+    prompt('What is your name?');
 });
 
