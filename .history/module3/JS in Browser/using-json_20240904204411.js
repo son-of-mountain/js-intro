@@ -19,10 +19,3 @@ console.log(plainJson.greeting["1"])
 
 
 // now lets convert js to json
-const data = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30
-}
-const dataJson = JSON.stringify(data)
-console.log(dataJson)

@@ -24,5 +24,4 @@ const data = {
     lastName: "Doe",
     age: 30
 }
-const dataJson = JSON.stringify(data)
-console.log(dataJson)
+console.log(typeof(data))
