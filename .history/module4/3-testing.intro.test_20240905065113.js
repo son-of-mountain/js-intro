@@ -4,3 +4,4 @@ function concatStr(a,b){
 
 module.exports = concatStr;
 
+expect(concatStr("ab","cv")).toBe("abcv")
