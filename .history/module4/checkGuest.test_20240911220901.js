@@ -1,0 +1,2 @@
+const checker = require('./checkGuest');
+
