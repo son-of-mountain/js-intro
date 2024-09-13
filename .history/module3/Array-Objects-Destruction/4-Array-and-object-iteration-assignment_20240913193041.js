@@ -13,8 +13,7 @@ function logDairy() {
         if(item.name == 'cheese')
             console.log('Cheese is $100');
         
-        else 
-            console.log(item);
+        console.log(item);
 
     }
 }

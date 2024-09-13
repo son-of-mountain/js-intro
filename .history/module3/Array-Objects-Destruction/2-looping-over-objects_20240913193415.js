@@ -11,7 +11,6 @@
         
     }
 
-    While:
     
     - For OF loops through the properties only using Object.keys()
 

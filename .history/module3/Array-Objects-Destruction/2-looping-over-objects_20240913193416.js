@@ -11,8 +11,7 @@
         
     }
 
-    While:
-    
+    - FOR OF loops through the values only, excluding non-enumerable propertieswhi
     - For OF loops through the properties only using Object.keys()
 
     for(const    key    of      Object.values(car)   ){

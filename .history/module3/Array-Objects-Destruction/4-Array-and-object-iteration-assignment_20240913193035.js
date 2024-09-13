@@ -12,9 +12,9 @@ function logDairy() {
         
         if(item.name == 'cheese')
             console.log('Cheese is $100');
+        else if(typeof item === 'object')
         
-        else 
-            console.log(item);
+        console.log(item);
 
     }
 }

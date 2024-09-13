@@ -8,15 +8,8 @@ var dairy = [
         'ice cream',
         'milkshake']
 function logDairy() {
-    for (var item of dairy){
-        
-        if(item.name == 'cheese')
-            console.log('Cheese is $100');
-        
-        else 
-            console.log(item);
-
-    }
+    for (var item of dairy)
+        console.log(item);
 }
 logDairy()
 // Task 2
