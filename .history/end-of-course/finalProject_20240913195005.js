@@ -23,9 +23,9 @@ const tax = 1.20;
 function getPrices(taxBoolean) {
     for (let dish of dishData) {
         let finalPrice;
-        if (taxBoolean===true)
+        if (taxBoolean)
             finalPrice = dish.price * tax;
-        else if (taxBoolean===false)
+        else if (!taxBoolean)
             finalPrice = dish.price;
         else {
             console.log("You need to pass a boolean to the getPrices call!");
