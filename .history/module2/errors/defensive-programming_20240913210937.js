@@ -14,11 +14,13 @@ function letterFinder(word, match) {
             }
         }
         else{
-            
+            console.error('Please pass correct arguments to the function.')   
         }
 
     }
     catch(error) {
         console.error('An error occurred:', error.message)
     }
-}
+
+letterFinder(22, 1) 
+letterFinder("cat", "c")

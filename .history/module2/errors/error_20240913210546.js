@@ -11,10 +11,3 @@ catch(e){
 }
 
 console.log("Im alive");
-
-try {
-    throw new Error();
-    console.log('Square');
-} catch(err) {
-    console.log('Circle');
-}

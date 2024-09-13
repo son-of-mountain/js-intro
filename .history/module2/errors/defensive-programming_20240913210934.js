@@ -18,7 +18,9 @@ function letterFinder(word, match) {
         }
 
     }
-    // catch(error) {
-    //     console.error('An error occurred:', error.message)
-    // }
-}
+    catch(error) {
+        console.error('An error occurred:', error.message)
+    }
+
+letterFinder(22, 1) 
+letterFinder("cat", "c")
